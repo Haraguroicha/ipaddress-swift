@@ -3,6 +3,13 @@ import PackageDescription
 
 let package = Package(
     name: "IpAddress",
+    products: [
+        .library(
+            name: "IpAddress",
+            targets: [
+                "IpAddress"
+            ]),
+    ],
     dependencies: [
       .package(url: "https://github.com/attaswift/BigInt.git", from: "5.2.1")
     ],
